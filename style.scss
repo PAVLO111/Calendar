@@ -33,15 +33,8 @@ body {
     cursor: pointer;
   }
   
-  // &__day::before {
-  //   content: '1';
-  //   font-family: Arial;
-  //   font-size: 30px;
-  // }
-
-
   @for $date from 1 through 31 {
-    &__day:nth-child(n + #{$date})::before {
+    &__day:nth-child(#{$date})::before {
       content: '#{$date}';
       font-family: Arial;
       font-size: 30px;
