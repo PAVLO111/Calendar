@@ -48,9 +48,14 @@ body {
 
   $calendar-padding: 10px;
   $one-day: 101px;
-  $correct-margin: 111px;
 
-  .start-day--sunday {
+  $days: sunday, monday, tuesday, wednesday, thursday, friday, saturday;
+
+  @each $day in $days {
+
+  }
+
+  .calendar__start-day--sunday {
     margin-left: $one-day * 6;
   }
 }
