@@ -4,5 +4,11 @@
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build --public-url=/dist/"
+  },
+  "dependencies": {
+    "parcel": "^2.13.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3"
   }
 }
