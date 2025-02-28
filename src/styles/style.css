@@ -187,6 +187,9 @@ body {
   font-family: Arial;
   font-size: 30px;
 }
+.calendar__start-day--sunday {
+  margin-left: 606px;
+}
 .calendar__start-day--monday {
   margin-left: 0;
 }
@@ -204,9 +207,6 @@ body {
 }
 .calendar__start-day--saturday {
   margin-left: 505px;
-}
-.calendar__start-day--sunday {
-  margin-left: 606px;
 }
 
 /*# sourceMappingURL=style.css.map */
