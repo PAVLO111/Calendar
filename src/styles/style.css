@@ -187,28 +187,25 @@ body {
   font-family: Arial;
   font-size: 30px;
 }
-.calendar .calendar__start-day--0 {
+.calendar__start-day--monday {
   margin-left: 0;
 }
-.calendar .calendar__start-day--101px {
+.calendar__start-day--tuesday {
   margin-left: 101px;
 }
-.calendar .calendar__start-day--202px {
+.calendar__start-day--wednesday {
   margin-left: 202px;
 }
-.calendar .calendar__start-day--303px {
+.calendar__start-day--thursday {
   margin-left: 303px;
 }
-.calendar .calendar__start-day--404px {
+.calendar__start-day--friday {
   margin-left: 404px;
 }
-.calendar .calendar__start-day--505px {
+.calendar__start-day--saturday {
   margin-left: 505px;
 }
-.calendar .calendar__start-day--606px {
-  margin-left: 606px;
-}
-.calendar .calendar__start-day--sunday {
+.calendar__start-day--sunday {
   margin-left: 606px;
 }
 

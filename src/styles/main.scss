@@ -47,29 +47,21 @@ body {
     }
   }
 
-
   $one-day: 101px;
+  $days: (
+    'monday': 0,
+    'tuesday': $one-day, 
+    'wednesday': $one-day * 2,
+    'thursday': $one-day * 3,
+    'friday': $one-day * 4,
+    'saturday': $one-day * 5, 
+    'sunday': $one-day * 6
+  );
 
-  // $days: monday, tuesday, wednesday, thursday, friday, saturday, sunday;
-
-  $monday: 0;
-  $tuesday: $one-day;
-  $wednesday: $one-day * 2;
-  $thursday: $one-day * 3;
-  $friday: $one-day * 4;
-  $saturday: $one-day * 5;
-  $sunday: $one-day * 6;
-
-  $days: $monday, $tuesday, $wednesday, $thursday, $friday, $saturday, $sunday;
-
-  @each $day in $days {
-    .calendar__start-day--#{$day} {
-      margin-left: #{$day};
+  @each $day, $value in $days {
+    &__start-day--#{$day} {
+      margin-left: $value;
     }
-  }
-
-  .calendar__start-day--sunday {
-    margin-left: $one-day * 6;
   }
 }
 
