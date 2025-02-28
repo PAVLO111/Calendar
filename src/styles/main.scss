@@ -1,3 +1,5 @@
+// @import './utils/variables';
+
 body {
   background-color: rgb(48, 46, 46);
 
@@ -46,13 +48,24 @@ body {
   }
 
 
-  $calendar-padding: 10px;
   $one-day: 101px;
 
-  $days: sunday, monday, tuesday, wednesday, thursday, friday, saturday;
+  // $days: monday, tuesday, wednesday, thursday, friday, saturday, sunday;
+
+  $monday: 0;
+  $tuesday: $one-day;
+  $wednesday: $one-day * 2;
+  $thursday: $one-day * 3;
+  $friday: $one-day * 4;
+  $saturday: $one-day * 5;
+  $sunday: $one-day * 6;
+
+  $days: $monday, $tuesday, $wednesday, $thursday, $friday, $saturday, $sunday;
 
   @each $day in $days {
-
+    .calendar__start-day--#{$day} {
+      margin-left: #{$day};
+    }
   }
 
   .calendar__start-day--sunday {
