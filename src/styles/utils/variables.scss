@@ -1,5 +1,4 @@
 $one-day: 101px;
-  
 $calendar-start-day: (
   'sunday': $one-day * 6,
   'monday': 0,
@@ -9,5 +8,7 @@ $calendar-start-day: (
   'friday': $one-day * 4,
   'saturday': $one-day * 5
 );
-
-
+$month-length-31: 31;
+$month-length-30: 30;
+$month-length-29: 29;
+$month-length-28: 28;

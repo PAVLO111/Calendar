@@ -43,8 +43,32 @@ body {
     transform: translate(0, -20px);
   }
   
-  @for $date from 1 through 31 {
-    &__day:nth-child(#{$date})::before {
+  @for $date from 1 through $month-length-31 {
+    &--month-length :nth-child(#{$date})::before {
+      content: '#{$date}';
+      font-family: Arial;
+      font-size: 30px;
+    }
+  }
+
+  @for $date from 1 through $month-length-30 {
+    &--month-length :nth-child(#{$date})::before {
+      content: '#{$date}';
+      font-family: Arial;
+      font-size: 30px;
+    }
+  }
+
+  @for $date from 1 through $month-length-29 {
+    &--month-length :nth-child(#{$date})::before {
+      content: '#{$date}';
+      font-family: Arial;
+      font-size: 30px;
+    }
+  }
+
+  @for $date from 1 through $month-length-28 {
+    &--month-length :nth-child(#{$date})::before {
       content: '#{$date}';
       font-family: Arial;
       font-size: 30px;
@@ -55,11 +79,6 @@ body {
     &--start-day-#{$day} :first-child {
       margin-left: $value;
     }
-  }
-
-
-  &--month-lenght {
-
   }
 }
 
