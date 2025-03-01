@@ -1,6 +1,6 @@
 $one-day: 101px;
   
-$days: (
+$calendar-start-day: (
   'sunday': $one-day * 6,
   'monday': 0,
   'tuesday': $one-day, 

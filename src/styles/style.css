@@ -1,4 +1,5 @@
 body {
+  height: 100vh;
   background-color: rgb(48, 46, 46);
   display: flex;
   justify-content: center;
@@ -6,15 +7,13 @@ body {
 }
 
 .calendar {
-  background-color: blueviolet;
-}
-.calendar__container {
   box-sizing: border-box;
   width: 726px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 1px;
+  background-color: blueviolet;
 }
 .calendar__day {
   box-sizing: border-box;
@@ -187,25 +186,25 @@ body {
   font-family: Arial;
   font-size: 30px;
 }
-.calendar__start-day--sunday {
+.calendar--start-day-sunday :first-child {
   margin-left: 606px;
 }
-.calendar__start-day--monday {
+.calendar--start-day-monday :first-child {
   margin-left: 0;
 }
-.calendar__start-day--tuesday {
+.calendar--start-day-tuesday :first-child {
   margin-left: 101px;
 }
-.calendar__start-day--wednesday {
+.calendar--start-day-wednesday :first-child {
   margin-left: 202px;
 }
-.calendar__start-day--thursday {
+.calendar--start-day-thursday :first-child {
   margin-left: 303px;
 }
-.calendar__start-day--friday {
+.calendar--start-day-friday :first-child {
   margin-left: 404px;
 }
-.calendar__start-day--saturday {
+.calendar--start-day-saturday :first-child {
   margin-left: 505px;
 }
 

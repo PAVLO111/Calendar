@@ -2,6 +2,7 @@
 // @use './utils/variables';
 
 body {
+  height: 100vh;
   background-color: rgb(48, 46, 46);
 
   display: flex;
@@ -10,16 +11,18 @@ body {
 }
 
 .calendar {
+  box-sizing: border-box;
+  width: 726px;
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+
   background-color: blueviolet;
 
   &__container {
-    box-sizing: border-box;
-    width: 726px;
-    padding: 10px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1px;
+   
   }
   
   &__day {
@@ -48,10 +51,15 @@ body {
     }
   }
 
-  @each $day, $value in $days {
-    &__start-day--#{$day} {
+  @each $day, $value in $calendar-start-day {
+    &--start-day-#{$day} :first-child {
       margin-left: $value;
     }
+  }
+
+
+  &--month-lenght {
+
   }
 }
 
